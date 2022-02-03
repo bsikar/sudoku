@@ -128,8 +128,8 @@ async fn main() {
 fn conf() -> Conf {
     Conf {
         window_title: "Sudoku".to_string(),
-        window_width: 900,
-        window_height: 900,
+        window_width: WIDTH as i32,
+        window_height: HEIGHT as i32,
         window_resizable: false,
         ..Default::default()
     }
