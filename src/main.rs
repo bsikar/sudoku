@@ -57,9 +57,9 @@ impl Sudoku {
                 let board = self.board[i][j];
                 let solved = self.solved[i][j];
                 let text = if board != 0 {
-                    format!("{}", board)
+                    format!("{board}")
                 } else {
-                    format!("{}", solved)
+                    format!("{solved}")
                 };
                 let text_size = measure_text(&text, None, TEXT_SIZE as u16, 1.0);
                 let text_x = (x + w / 3.0) - w / 6.0 - text_size.width / 2.0;
